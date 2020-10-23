@@ -31,6 +31,12 @@ spec:
           env:
             - name: GROUP_NAME
               value: {{ .Values.groupName | quote }}
+            - name: HTTP_PROXY
+              value: {{ .Values.http_proxy | quote }}
+            - name: HTTPS_PROXY
+              value: {{ .Values.https_proxy | quote }}
+            - name: NO_PROXY
+              value: {{ .Values.no_proxy | quote }}
           ports:
             - name: https
               containerPort: 443

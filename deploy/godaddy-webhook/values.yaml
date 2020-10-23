@@ -19,6 +19,10 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+http_proxy: ""
+https_proxy: ""
+no_proxy: ""
+
 service:
   type: ClusterIP
   port: 443
